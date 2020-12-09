@@ -127,6 +127,13 @@ function mousePressed() {
 	else
 		audio.stop();
 }
+function touchStarted() {
+	// console.log(mouseX, mouseY);
+	if (!audio.isPlaying())
+		audio.play();
+	else
+		audio.stop();
+}
 
 function generateTreeStrings() {
 	stroke(180);
