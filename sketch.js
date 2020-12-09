@@ -11,7 +11,7 @@ let font;
 let angle = 0;
 
 function preload() {
-	audio = loadSound('Ariana Grande - Santa Tell Me.mp3');
+	audio = loadSound('Little Drumma Boy.M4A');
 	font = loadFont('LobsterTwo-Italic.ttf')
 }
 
@@ -72,7 +72,7 @@ function draw() {
 
 	level = amp.getLevel();
 	level = map(level, 0, 1, 0, 255);
-	level *= random(10, 14); // do some math to get a good range for controlling the color
+	level *= random(10, 12); // do some math to get a good range for controlling the color
 	// console.log(level)
 
 	for (let i = 0; i < numLights; i++) {
